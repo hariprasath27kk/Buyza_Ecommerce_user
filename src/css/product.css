@@ -1,0 +1,108 @@
+/* Custom CSS for product cards and animations */
+/* .product-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translateY(0); 
+} */
+
+/* .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+} */
+
+.r1 {
+    justify-content: center;
+    justify-content: space-around;
+    padding: 0px 3%;
+    row-gap: 20px;
+}
+
+.add-to-cart-btn {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Adds a slight scale effect on hover */
+}
+
+.search-input {
+    margin: 20px 0px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-input:focus {
+    box-shadow: none;
+    border-color: #80bdff;
+}
+
+.animate__animated {
+    animation-duration: 1s;
+}
+
+/* Additional styles for buttons */
+.like-btn, .view-btn {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.like-btn:hover, .view-btn:hover {
+    transform: scale(1.05);
+}
+
+.like-btn.liked {
+    color: #ff4757;
+}
+
+.view-btn {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.view-btn:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Product Card Hover Effects */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: scale(1.05) !important; /* Zoom effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Card Image Hover Effect */
+.card-img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .card-img {
+    transform: scale(1.1); /* Zoom effect for the image */
+}
+
+/* Button Hover Effects */
+.view-btn, .add-to-cart-btn, .like-btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-btn:hover, .add-to-cart-btn:hover, .like-btn:hover {
+    transform: scale(1.05); /* Slight zoom effect on buttons */
+}
+
+/* Like Button Style */
+.like-btn.liked {
+    color: #dc3545; /* Change color when liked */
+}
+
+

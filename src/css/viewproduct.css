@@ -1,0 +1,137 @@
+/* General Styles */
+.product-view-container {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+/* Product Card */
+.product-view-card {
+    margin-left: 25%;
+    margin-top: 5%;
+    width: 150%;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    padding: 20px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: right !important;
+    text-align: center;
+}
+
+.product-view-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.viewproduct-cardbody{
+    border-radius: 20px !important;
+    margin-left: 20px;
+}
+
+.product-view-image {
+    transition: transform 0.3sease, filter 0.3sease;
+    width: 60% !important;
+    height: 320px !important;
+    object-fit: cover;
+    float: right !important;
+}
+
+/* Product Image */
+.product-view-image {
+    border-radius: 15px;
+    max-height: 400px;
+    width: 100%;
+    object-fit: contain; /* Ensures the entire image fits inside */
+    /* border: 3px solid #ddd;  */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  */
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease;
+}
+
+.product-view-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(250, 2, 2, 0.2);
+}
+
+
+/* Product Details */
+.product-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.product-rating {
+    font-size: 1.2rem;
+    color: #ffc107;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0056b3;
+}
+
+.like-btn {
+    border: 2px solid #dc3545;
+    padding: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.like-btn:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.liked {
+    color: #dc3545;
+    background-color: #ffe6e6;
+}
+
+/* Back Button */
+.back-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}

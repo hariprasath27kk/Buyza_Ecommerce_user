@@ -1,0 +1,124 @@
+/* Add custom styles here */
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.form-control.quantity-input  {
+    padding-left: 0px !important;
+}
+
+.btn-success, .btn-danger {
+    transition: opacity 0.3s ease;
+}
+
+.btn-success:hover, .btn-danger:hover {
+    opacity: 0.8;
+}
+/* Custom CSS for AddtoCart component */
+.quantity-input {
+    color: black !important; /* Ensure the text color is black */
+    transition: all 0.3s ease; /* Smooth transition for input */
+}
+
+.quantity-input:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.quantity-icon {
+    transition: transform 0.2s ease; /* Smooth transition for icons */
+}
+
+.quantity-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+    color: #007bff; /* Change color on hover */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth card animations */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.btn-success, .btn-danger {
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth button animations */
+}
+
+.btn-success:hover, .btn-danger:hover {
+    opacity: 0.9; /* Slightly fade buttons on hover */
+    transform: scale(1.05); /* Slightly enlarge buttons on hover */
+}
+
+/* Custom CSS for AddtoCart component */
+/* Custom CSS for AddtoCart component */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth card animations */
+    border: none; /* Remove default card border */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    position: relative; /* Required for the overlay */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.card-img-top {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth image animations */
+    width: 100%; /* Ensure the image fills the card */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05); /* Slightly zoom in the image on hover */
+    filter: brightness(0.9); /* Darken the image slightly on hover */
+}
+
+/* Add a shadow overlay effect on the image */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for overlay */
+    z-index: 1; /* Ensure it's above the image */
+}
+
+.card:hover::before {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Ensure the card content stays above the overlay */
+.card-body {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    background: white; /* Add a white background to the card body */
+    border-radius: 0 0 5px 5px; /* Match card border radius */
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.card:hover .card-body {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background on hover */
+}
+
+/* Smooth transition for buttons */
+.btn-success, .btn-danger {
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth button animations */
+}
+
+.btn-success:hover, .btn-danger:hover {
+    opacity: 0.9; /* Slightly fade buttons on hover */
+    transform: scale(1.05); /* Slightly enlarge buttons on hover */
+}

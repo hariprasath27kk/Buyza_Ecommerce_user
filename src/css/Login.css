@@ -1,0 +1,164 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.auth-main {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 20px;
+}
+
+/* Login Card */
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input Field Styling */
+.auth-input-container,
+.auth-password-container {
+    position: relative;
+}
+
+.auth-input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    z-index: 1;
+}
+
+.form-control {
+    padding-left: 40px !important;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: none;
+    color: #fff;
+}
+
+/* Password Eye Icon */
+.auth-eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6c757d;
+}
+
+/* Login Button */
+.auth-login-btn {
+    background: #ff6b6b;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.auth-login-btn:hover {
+    background: #ff4757;
+}
+
+/* Remember Me Checkbox */
+.auth-remember-me {
+    color: #fff;
+}
+
+/* Forgot Password Link */
+.auth-forgot-password-link {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.auth-forgot-password-link:hover {
+    color: #ff4757;
+}
+
+/* Social Login */
+.auth-social-login {
+    text-align: center;
+}
+
+.auth-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.auth-social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.auth-social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Register Link */
+.auth-register-link {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.auth-register-link:hover {
+    color: #ff4757;
+}
+
+/* Set "Remember Me" checkbox label color to black */
+.auth-remember-me label {
+    color: black !important;
+    margin-right: 30px;
+}
+
+.auth-remember-me {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* Reduce space between checkbox and text */
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+    font-weight: 400; /* Ensure text is properly styled */
+}
+
+/* Override Bootstrap's default checkbox spacing */
+.auth-remember-me .form-check-input {
+    margin-top: 5px !important;
+    margin-left: 0px !important;
+    transform: scale(0.9); /* Slightly reduce checkbox size */
+}
+
+

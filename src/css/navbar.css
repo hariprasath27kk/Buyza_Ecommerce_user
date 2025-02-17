@@ -1,0 +1,141 @@
+/* Navbar Container */
+.custom-navbar {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navbar Brand (Logo) */
+.navbar-brand img {
+    height: 35px;
+    width: 200px;
+}
+
+/* Navbar Links */
+.nav-link {
+    color: #ffffff !important; /* White text */
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #ffdd57 !important; /* Yellow on hover */
+}
+
+.nav-icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Dropdown Menu */
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-item {
+    color: #000000 !important;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+    background-color: rgb(93, 93, 95);
+
+}
+
+.dropdown-item:hover {
+    background-color: #a3a5a787 !important;
+    color: #000000 !important;
+}
+
+.dropdown-submenu {
+    position: relative;
+    background-color: rgba(94, 38, 235, 0.921);
+    color: #000000 ;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+
+/* Cart Icon */
+.cart-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.cart-link:hover .cart-icon {
+    color: #ffdd57; /* Yellow on hover */
+}
+
+.cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 12px;
+}
+
+/* User Icon */
+.user-icon {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.user-icon:hover {
+    color: #ffdd57; /* Yellow on hover */
+}
+
+/* Login Button */
+.login-button {
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff !important;
+}
+
+.login-button:hover {
+    background-color: #ffffff;
+    color: #6a11cb; /* Gradient color on hover */
+}
+
+.login-icon {
+    margin-right: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #6a11cb; /* Gradient color */
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .nav-dropdown .dropdown-menu {
+        box-shadow: none;
+        margin-top: 0;
+    }
+}
